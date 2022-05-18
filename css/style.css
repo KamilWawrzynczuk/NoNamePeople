@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* COLORS
+ h1	#000F37
+h2	#000F37
+p	#4F4F4F  */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  min-height: 85vh;
+}
+
+.header_section {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header_left,
+.header_right {
+  margin: 10rem 0;
+  min-width: 35%;
+}
+
+.header_left {
+  text-align: left;
+  padding: 10rem 8rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+nav,
+footer {
+  padding: 2.5rem 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo_img,
+.nnp {
+  color: #000;
+}
+
+.nnp {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.header_left h1,
+.header_left p,
+.header_left a {
+  margin: 1.5rem;
+}
+
+.header_left h1 {
+  letter-spacing: 0.1rem;
+}
+
+.header_left a,
+.header_left a:link,
+.header_left a:active,
+.header_left a:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  background-color: lightskyblue;
+}
+
+.header_left p {
+  width: 50%;
+}
+
+main {
+  padding: 1rem 0;
+  background-color: lightskyblue;
+}
+
+.services_info {
+  width: 50%;
+  margin: 0.5rem auto 3rem;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 5px;
+}
+
+.services_list,
+.services_img {
+  min-width: 50%;
+  height: auto;
+}
+
+.services_li {
+  list-style-type: none;
+  padding-top: 2rem;
+  font-weight: 600;
+}
+
+.services_li::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../assets/png/check-mark.png");
+  background-size: cover;
+  margin-right: 1rem;
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+}
+
+.services_list {
+  margin-top: 15rem;
+  text-align: left;
+  position: relative;
+  left: 50%;
+  transform: translateX(-70%);
+}
+
+.services_img {
+  padding: 10rem 2rem;
+}
+
+.services {
+  width: 100%;
+  text-align: center;
+  padding: 8rem;
+}
+
+.services p {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.footer_right i {
+  margin: 0 1rem;
+}
